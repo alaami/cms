@@ -94,7 +94,8 @@ logs
 results
 node_modules
 .node_history
-
+#to avoid herouku issue
+package-lock.json
 
 ############################
 # Tests
