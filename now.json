@@ -5,7 +5,11 @@
     "autoAlias": false
     },
       "builds": [
-    {"src": "server.js", "use": "@now/node-server"}
+    {"src": "server.js", "use": "@now/node-server",
+	          "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
   ],
     "routes": [
       { "src": "(.*\\..*)", "dest": "$1" },
