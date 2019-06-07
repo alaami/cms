@@ -4,6 +4,9 @@
       "github": {
     "autoAlias": false
     },
+      "builds": [
+    {"src": "index.js", "use": "@now/node-server"}
+  ],
     "routes": [
       { "src": "(.*\\..*)", "dest": "$1" },
       { "src": ".*", "dest": "/index.html" }
